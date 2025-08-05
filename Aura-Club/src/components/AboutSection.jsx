@@ -21,7 +21,6 @@
 //   );
 // }
 
-
 // import React, { useEffect, useRef, useState } from 'react';
 // import vidThumbnail from '../assets/vid-thumbnail.png';
 // import videoFile from '../assets/video.mp4';
@@ -92,7 +91,6 @@
 //     </section>
 //   );
 // }
-
 
 // import React, { useEffect, useRef, useState } from 'react';
 // import vidThumbnail from '../assets/vid-thumbnail.png';
@@ -220,15 +218,15 @@
 //   );
 // }
 
-import React, { useEffect, useRef, useState } from 'react';
-import vidThumbnail from '../assets/vid-thumbnail.png';
-import videoFile from '../assets/video.mp4';
+import React, { useEffect, useRef, useState } from "react";
+import vidThumbnail from "../assets/vid-thumbnail.png";
+import videoFile from "../assets/video.mp4";
 
 // Product Images
-import earringsImg from '../assets/earring.jpg';
-import braceletsImg from '../assets/earring.jpg';
-import pendantImg from '../assets/earring.jpg';
-import ringsImg from '../assets/earring.jpg';
+import earringsImg from "../assets/earring.jpg";
+import braceletsImg from "../assets/earring.jpg";
+import pendantImg from "../assets/earring.jpg";
+import ringsImg from "../assets/earring.jpg";
 
 export default function AboutSection() {
   const videoRef = useRef(null);
@@ -265,9 +263,11 @@ export default function AboutSection() {
         </div>
         <div className="md:w-1/2 w-full text-center md:text-left">
           <p className="text-[#5c3a2d] text-lg leading-relaxed max-w-lg md:max-w-none mx-auto">
-            At The Auraa Club, we believe jewellery isn't just an accessory – it's an extension of your
-            personality. Our carefully curated collection of bracelets, rings, pendants, and earrings is
-            designed for those who crave timeless elegance, modern style, and everyday durability.
+            At The Auraa Club, we believe jewellery isn't just an accessory –
+            it's an extension of your personality. Our carefully curated
+            collection of bracelets, rings, pendants, and earrings is designed
+            for those who crave timeless elegance, modern style, and everyday
+            durability.
           </p>
         </div>
       </div>
@@ -287,22 +287,23 @@ export default function AboutSection() {
 
       {/* Our Products Section */}
       <section className="w-full bg-[#d2ab91] py-16 px-6 md:px-24">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-[#3a1d0e] mb-12">
             Our Products
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* Product Cards */}
-            {[{ img: earringsImg, label: 'Earrings' },
-              { img: braceletsImg, label: 'Bracelets' },
-              { img: pendantImg, label: 'Pendant Chain' },
-              { img: ringsImg, label: 'Rings' }
+            {[
+              { img: earringsImg, label: "Earrings" },
+              { img: braceletsImg, label: "Bracelets" },
+              { img: pendantImg, label: "Pendant Chain" },
+              { img: ringsImg, label: "Rings" },
             ].map((product, idx) => (
               <div key={idx} className="flex flex-col items-center">
                 <img
                   src={product.img}
                   alt={product.label}
-                  className="w-40 h-40 object-cover rounded"
+                  className="w-40 h-90 object-cover rounded"
                 />
                 <p className="mt-4 text-[#3a1d0e] text-lg font-medium border-t-2 border-[#3a1d0e] pt-2 w-full text-center">
                   {product.label}
@@ -317,14 +318,14 @@ export default function AboutSection() {
       <section className="bg-[#fdf6ef] text-[#3c1f0a] w-full px-6 py-16">
         {/* Paragraph */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <p className="text-lg md:text-xl font-semibold leading-relaxed">
+          {/* <p className="text-lg md:text-xl font-semibold leading-relaxed">
             At The Auraa Club, we blend elegance with purpose. Each piece tells a story of timeless
             craftsmanship, thoughtful design, and unparalleled quality.
-          </p>
+          </p>  */}
         </div>
 
         {/* Benefits */}
-        <div className="text-center max-w-7xl mx-auto mb-16">
+        <div className="text-left max-w-7xl mx-auto mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-10">
             Why You’ll Love The Auraa Club
           </h2>
@@ -334,32 +335,39 @@ export default function AboutSection() {
               <p className="text-sm">Shine that lasts, without the fade</p>
             </div>
             <div className="border border-[#3c1f0a] p-6 rounded-md shadow-sm bg-white/40">
-              <h3 className="font-bold text-lg mb-2">Premium Look,<br />Everyday Price</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Premium Look,
+                <br />
+                Everyday Price
+              </h3>
               <p className="text-sm">Affordable luxury in every piece</p>
             </div>
             <div className="border border-[#3c1f0a] p-6 rounded-md shadow-sm bg-white/40">
               <h3 className="font-bold text-lg mb-2">Comfort Meets Class</h3>
-              <p className="text-sm">Lightweight, skin-friendly, and always elegant</p>
+              <p className="text-sm">
+                Lightweight, skin-friendly, and always elegant
+              </p>
             </div>
             <div className="border border-[#3c1f0a] p-6 rounded-md shadow-sm bg-white/40">
               <h3 className="font-bold text-lg mb-2">Curated Styles</h3>
-              <p className="text-sm">From minimal to statement, find your perfect match</p>
+              <p className="text-sm">
+                From minimal to statement, find your perfect match
+              </p>
             </div>
           </div>
         </div>
 
         {/* Shipping & Packing Info */}
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-left max-w-7xl mx-auto mb-16 ">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Fast. Safe. Beautifully Packed
           </h2>
-          <p className="text-base mb-1">Every piece is packed with care and ready to gift.</p>
-          <p className="text-base">Pan-India Delivery | Easy Returns</p>
+          <p className="text-base mb-1">
+            Every piece is packed with care and ready to gift.
+          </p>
+          <p className="text-base">Pan-India Delivery | Easy Returns|</p>
         </div>
       </section>
     </section>
   );
 }
-
-
-
