@@ -12,7 +12,6 @@ export default function Hero() {
           className="w-[650px] h-[500px] object-cover rounded animate-breathe"
         />
       </div>
-
       {/* Right - Text */}
       <div className="md:w-1/2 w-full flex items-center justify-center p-6">
         <div className="text-[#5c3a2d] text-center flex flex-col items-center justify-center">
