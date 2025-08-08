@@ -5,16 +5,16 @@ export default function Hero() {
   return (
     <section className="w-full min-h-screen bg-[#cfae97] flex flex-col md:flex-row items-center justify-between">
       {/* Left - Image */}
-      <div className="md:w-1/2 w-full flex items-center justify-center">
-        <img
-          src={heroImg}
-          alt="Jewelry Hero"
-          className="w-[650px] h-[500px] object-cover rounded animate-breathe"
-        />
-      </div>
+      <div className="md:w-1/2 w-full flex items-start justify-start -mt-10 pr-16">
+    <img
+      src={heroImg}
+      alt="Jewelry Hero"
+      className="w-[700px] h-[550px] object-cover rounded animate-breathe"
+    />
+  </div>
       {/* Right - Text */}
       <div className="md:w-1/2 w-full flex items-center justify-center p-6">
-        <div className="text-[#5c3a2d] text-center flex flex-col items-center justify-center">
+        <div className="text-[#5c3a2d] text-center flex flex-col items-center justify-center -mt-20">
           <img
             src={logo}
             alt="Auraa Club Logo"

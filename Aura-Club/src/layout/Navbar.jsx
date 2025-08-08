@@ -1,7 +1,14 @@
 // components/Navbar.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
-const navItems = ["Home", "Shop", "Our Story", "Get in Touch", "Gift Hampers"];
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "Shop", path: "#" },
+  { name: "Our Story", path: "/OurStory" },
+  { name: "Get in Touch", path: "#" },
+  { name: "Gift Hampers", path: "#" },
+];
 
 const Navbar = () => {
   return (
@@ -13,7 +20,11 @@ const Navbar = () => {
               key={index}
               className="transition transform duration-300 ease-in-out hover:scale-110 hover:text-[#8b5e3c] cursor-pointer"
             >
-              {item}
+              {item.path.startsWith("/") ? (
+                <Link to={item.path}>{item.name}</Link>
+              ) : (
+                <span>{item.name}</span>
+              )}
             </li>
           ))}
         </ul>
