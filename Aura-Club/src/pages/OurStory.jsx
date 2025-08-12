@@ -51,13 +51,14 @@ const OurStory = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-x-16">
             {/* Left Column: Image (Corrected width) */}
-            <div className="md:w-4/5 w-full">
+            <div className="md:w-4/5 w-full md:-ml-64 -ml-48">
               <img
                 src={aboutImage}
                 alt="About Jewelry"
-                className="w-full rounded-lg" // Added rounded-lg for softer corners
+                className="w-full rounded-lg"
               />
             </div>
+
 
             {/* Right Column: Text Content */}
             <div className="md:w-6/12 w-full text-left text-[16px] leading-relaxed mt-8 md:mt-0">
