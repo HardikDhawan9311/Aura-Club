@@ -50,12 +50,12 @@ const OurStory = () => {
           <h2 className="text-4xl font-semibold text-left mb-12">About Us</h2>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-x-16">
-            {/* Left Column: Image (Corrected width) */}
+            {/* Left Column: Image */}
             <div className="md:w-4/5 w-full">
               <img
                 src={aboutImage}
                 alt="About Jewelry"
-                className="w-full rounded-lg" // Added rounded-lg for softer corners
+                className="w-full rounded-lg"
               />
             </div>
 
